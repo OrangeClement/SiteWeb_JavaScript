@@ -1,0 +1,1177 @@
+/*définir le style commun pour body, list et title*/
+
+*{
+	padding:0;
+	margin:0;
+}
+
+p, .description img, .cours_contenue h2, .bibliographie li{opacity: 0;}
+
+body{
+	/*border:3px double #003E6B;*/
+	font-family:Comfortaa-regular, Helvetiva, Arial,sans-serif;
+	min-width: 1320px;
+	max-width:1650px;
+	margin:auto;
+	background-color:#ffffff;
+	
+}
+
+li{list-style: none;}
+
+h2{
+	font-family: Novecentosanwide-5, Helvetiva, sans-serif;
+	font-size:180%;
+	color:#003E6B;
+	text-align: center;
+}
+
+/*animation de fade-in*/
+@keyframes fade-in{  
+    0%{ opacity: 0;}
+    100%{opacity:1;}
+}
+@-webkit-keyframes fade-in{
+    0%{ opacity: 0;}
+    100%{opacity:1;}
+}
+@-ms-keyframes fade-in{
+    0%{ opacity: 0;}
+    100%{opacity:1;}
+}
+@-o-keyframes fade-in{
+    0%{ opacity: 0;}
+    100%{opacity:1;}
+}
+@-moz-keyframes fade-in{
+    0%{ opacity: 0;}
+    100%{opacity:1;}
+}
+
+/*cadrer les photos et le titre*/
+
+.top{
+	width:inherit;
+	position:relative;
+	margin:auto;
+	overflow: hidden;
+	font-size:0px;
+	top:0;
+	height:900px;
+}
+.top_img{
+    overflow: hidden;
+	position: relative;
+	height:900px;
+}
+.top img{
+    min-width: 1320px;
+	max-width:1650px;
+	height:900px;
+}
+.top_title{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	text-align:center;
+	background-color:#ffffff;
+	filter:alpha(opacity=60);
+    /* CSS3 standard */
+    opacity:0.8;
+	z-index:1;
+}
+.top_title h1{
+	font-size:50px;
+	color:#003E6B;
+	margin:10px 0;
+	font-family: Novecentosanwide-4;
+}
+.top_title h2{
+	font-size:25px;
+	color:#003E6B;
+	margin-bottom:10px;
+}
+
+/*cadrerle menu*/
+
+.menu{
+	position:relative;
+	width:90%;
+	margin:auto;
+	background-color:#003E6B;
+	border-radius: 10px;
+	padding:0 5%;
+}	
+.menu li{
+	list-style-type:none;
+	text-align:center;
+	width:33.33%;
+	margin:auto;
+}
+.menu ul{
+	height:65px;
+}
+.menu>ul>li{
+	position:relative;
+	float:left;
+	display:block;
+}
+.menu ul li a:link,.menu ul li a:visited{
+	display:block;
+	text-decoration:none;
+	line-height:65px;
+	height:65px;
+	margin:auto;
+	font-size:1.25em;
+	background-color:#003E6B;
+	color:#ffffff;
+	border-left:solid 1px #003E6B;
+	border-right:solid 1px #003E6B;
+	border-bottom:none;
+}
+.menu ul li a:hover{
+	background-color:#ffffff;
+	color:#003E6B;
+	border-bottom:solid 1px #003E6B;
+
+}
+.menu>ul>li>ul { 
+	position: absolute;	
+	width:100%;
+	top: 65px; 
+	left:0;	
+	height: auto; 
+	display: none;
+	z-index: 2;
+
+}
+.menu ul li ul li{
+	width:100%;
+}
+
+.menu ul li ul li a:link,.menu ul li ul li a:visited{
+	line-height:55px;
+	height:55px;
+	font-size:1em;
+}
+
+/* le style de border en coins*/
+
+.titleframe{
+	margin:auto;
+	margin-top:30px;
+	margin-bottom:100px;
+	padding:20px;
+	position:relative;
+	width:800px;
+	height:90px;
+	text-align:center;
+}
+.titleframe:before, .titleframe:after, .title:before, .title:after {
+ content:" ";
+ position:absolute;
+ border-style:solid;
+ border-color:#003E6B;
+ padding:15px;
+}
+.titleframe:before { 
+ left:-4px;
+ top:-4px;
+ border-width:3px 0 0 3px;
+ border-top-left-radius:10px;
+}
+.titleframe:after { 
+ right:-4px;
+ bottom:-4px;
+ border-width:0 3px 3px 0;
+ border-bottom-right-radius:10px;
+}
+.title:before { 
+ left:-4px;
+ bottom:-4px;
+ border-width:0 0 3px 3px;
+ border-bottom-left-radius:10px;
+}
+.title:after { 
+ right:-4px;
+ top:-4px;
+ border-width:3px 3px 0 0;
+ border-top-right-radius:10px;
+}
+.title p{
+	margin:10px;
+}
+
+/*le style du contenue (image et lettre)dans la premiere partie*/ 
+.description{
+	margin:0px;
+	padding:50px 5%;
+	
+}
+.description p{
+	font-size:1.25em;
+	text-align:justify;
+	line-height:2em;
+	margin:30px 0;
+}
+.description img{
+	width:500px;
+	float:left;
+	margin:50px 3em 30px 0;
+}
+.description a{
+	text-decoration: none;
+	color:#003E6B;
+	font-style:italic;
+	
+}
+.description a:hover{
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+.upper_letter:first-letter{
+	font-size:2.5em;
+	color:#003E6B;
+}
+
+/*le style du contenue dans la troisieme partie*/ 
+
+.bibliographie h1{
+	color:#003E6B;
+	text-align: center;
+	margin:10px 0 60px;
+}
+.bibliographie{
+	margin:0px;
+	padding:50px 10%;
+}
+.bibliographie p{
+	font-size:1.25em;
+	text-align:justify;
+	line-height:2em;
+	margin:30px 0;
+}
+.bibliographie a{
+	text-decoration: none;
+	color:#003E6B;
+	font-style:italic;
+	
+}
+.bibliographie a:hover{
+	font-weight:bold;
+	text-decoration:underline;
+}
+.bibliographie ul {
+	font-size:20px;
+	line-height:150%;
+	padding-left:60px;
+}
+.bibliographie ul li{
+	list-style:url("../Images/book-icon.png");
+	list-style-position: inside;
+	margin-top:15px;
+}
+
+/*dessiner un cercle*/
+
+#circle {
+	margin:auto;
+    width: 20px;
+    height: 20px;
+	border:solid #003E6B;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+ }
+ 
+/*le style et la structure du contenue dans la deuxieme partie*/ 
+ 
+.cadrecours{
+	margin:auto;
+	width:1320px;
+}
+.cours_gauche{
+	float:left;
+	width:660px;
+	height:500px;
+}
+.cours_droit{
+	margin-left:660px;
+	height:500px;
+	width:660px;
+	border-left:2px solid #003E6B;
+
+}
+.cours_contenue{
+	position:absolute;
+	width:inherit;
+	margin-top:130px;
+	z-index:1;
+}
+.cours_contenue p{
+	font-size:1.25em;
+	text-align:center;
+	line-height:30px;
+	padding:20px 10px;
+	line-height: 30px;
+}
+.cours_animation{
+	position:absolute;
+	height:440px;
+	width:inherit;
+	margin:30px;
+	z-index:1;
+}
+.cours_animation img{
+	display:block;
+	height:440px;
+	width: 598px;
+	border:solid 2px #003E6B;
+}
+
+/*définir le style du boutton sur lequel on clique pour télécharger le support du cours*/
+
+.support{
+	display:inline;
+	vertical-align: baseline;
+	outline:none;
+	margin:0 2px;    
+    cursor: pointer;  
+    text-align: center;  
+    text-decoration: none; 
+	font-size: 14px/100%;
+	padding: .5em 2em .55em;  
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    border-radius: 2em;  
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);  
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);  
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	color: #ffffff;  
+    border: none;  
+    background: #003E6B;
+	font-style:normal;
+}
+.support:hover{
+	text-decoration:none;
+	font-weight:normal;
+	background-color:#603E6B;
+	transition:0.5s ;
+	-moz-transition: 0.5s ;	/* Firefox 4 */
+	-webkit-transition: 0.5s ;	/* Safari 和 Chrome */
+}
+
+/*le style du contenue dans le pied de la page*/ 
+
+.foot{
+	position:relative;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	background-color:#003E6B;
+	bottom:0;
+	width:100%;
+	color:white;
+	font-size:0.95em;
+	border-radius: 10px;
+}
+
+/*cadrer les photos de cours recherche WEB*/
+
+#cours-recherche{
+	overflow:hidden;	
+}
+#cours-recherche img{
+	height:436px;
+	width: 594px;
+}
+
+/*cadrer les photos de cours reseaux sociaux*/
+
+canvas{
+	border:solid 1px #003E6B;
+}
+#canvasbtn{
+	top:330px;
+	left:150px;
+}
+#canvasbtnbegin{
+	top:340px;
+	left:520px;
+	height:30px;
+	width:50px;
+	font-size: 15px;  
+	opacity:0;
+	-webkit-border-radius: 3px;   
+    -moz-border-radius: 3px;  
+    border-radius: 3px; 
+	background-color:lightgrey;
+}
+#canvasbtnstop{
+	top:380px;
+	left:520px;
+	height:30px;
+	width:50px;
+	font-size: 15px;
+	opacity:0;
+	-webkit-border-radius: 3px;   
+    -moz-border-radius: 3px;  
+    border-radius: 3px; 
+	background-color:#333;	
+}
+
+/*cadrer les photos de cours logique et web semantique 1*/
+
+.cours3{
+	position:absolute;
+	height:440px;
+	width:inherit;
+	margin:30px;
+}
+
+#cours3_top{z-index: 200;height: 440px; width: 598px; position: absolute;}
+#bg{z-index: 0; left:0; top:0;position: absolute;}
+#indication1{z-index: 1; left:30px; top:120px;width: 200px; position: absolute;color: white; font-size: 20px;}
+#indication2{z-index: 1; left:30px; top:120px;width: 200px; position: absolute;color: white; font-size: 20px; display: none;}
+#lampeL{top:360px; left:12px;position: absolute;display: block;z-index: 100;}
+#lampeLHover{top:360px; left:12px;position: absolute;display: block;opacity: 0;}
+#lampeR{top:360px;left:456px;position: absolute;z-index: 100;}
+#lampeRHover{top:360px;left:456px;position: absolute;display: block;opacity: 0;}
+#Aladdin{top:66px;left:237px;position: absolute;display: block;z-index: 100;}
+#AladdinHover{top:66px;left:237px;position: absolute;display: block;opacity: 0;}
+#demon{top:105px;left:80px;position: absolute;display: block;opacity: 0;}
+#genie{top:80px;left:150px;position: absolute;display: block;opacity: 0;}
+#dialogA{top:2px;left:304px;position: absolute;display: block;opacity: 0;}
+#dialogA2{top:2px;left:50px;position: absolute;display: block;opacity: 0;}
+#dialogL{top:130px;left:90px;position: absolute;display: block;opacity: 0;}
+#dialogR{top:130px;left:235px;position: absolute;display: block;opacity: 0;}
+#return{top:13px;left:520px;position: absolute;display: block;opacity: 0;z-index: 0;}
+#returnHover{top:13px;left:520px;position: absolute;display: block;opacity:0;z-index: 100;}
+#resultat{top:0;left:0;position: absolute;display: block;opacity: 0;}
+#icon{top:88px;left:530px;position: absolute;display: block;opacity: 1;z-index: 100;}
+#iconHover{top:88px;left:530px;position: absolute;display: block;opacity: 0;z-index: 100;}
+#lampeL:hover ,#lampeR:hover ,#icon:hover, #return:hover{cursor: pointer;}
+#shadowbox{top:0;left: 0;width: 598px;height: 440px;position: absolute; background-color: gray;display: block;opacity: 0;}
+#top_text{position:absolute; top: 350px; left:25px;z-index: 300; color: #FFFFFF; font-size: 22px; font-weight: bold;}
+#buttoncours3{
+	top:251px;
+	left:149px;
+	z-index: 300;
+}
+
+/* cadrer la vidéo de cours logique et web semantique 2*/
+
+#img_video {
+	top:0;
+	left:0;
+	position: relative;
+}
+#imgcours, #imgvideo, #imgDBpedia{
+	top:0;
+	left:0;
+	position: absolute;
+}
+#imgvideo, #imgDBpedia{
+	opacity: 0;
+}
+.vedioarea{
+	float: left;
+	width: 1110.2px;
+	height: 624px;
+	margin-left:30px;
+	margin-top:60px;
+}
+.textarea{
+	margin-left:1170px;
+	margin-top: 60px;
+	margin-right:10px;
+	font-size:1.5em;
+	color: lightgrey;
+	
+}
+.textarea h2{
+	color:lightgrey;
+	font-size:2em;
+	margin-bottom:20px;
+}
+.textarea p{
+	line-height:1.5em;
+}
+
+/*définir le layer*/
+
+.show{
+	display:none;
+	width: 100%;
+	height: 100%;
+	top:0;
+	position: absolute;
+}
+#box{
+	background-color: black;
+	opacity: 0.8;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -200;
+}
+
+/*definir la structure du cours 5*/
+
+.cours5,.cours7{
+	position:absolute;
+	height:440px;
+	width:600px;
+	margin:30px;
+	border:solid 1px #003E6B;
+	font-size:1.25em;
+	z-index:1;
+	
+}
+#premier{
+	height:440px;
+	width:600px;
+
+}
+#premier ul li{
+	float: left; 
+	width: 147.5px;
+	padding-top:50px;	
+	margin: 1px 1px; 
+	list-style: none;
+}
+#premier ul li img{
+	display:block;
+	margin:auto;
+	width:149px;
+	height:217px;
+	transition: 0.5s;
+	margin-top:111px;
+	z-index:7;
+}
+.filmtitle{
+	position:absolute;
+	top:107px;
+	text-align:center;
+	background-color:rgba(33, 33, 33, 0.7);
+	height:225.5px;
+	line-height:50px;
+	width:223.5px;
+	opacity:0;
+	color:white;
+	transition: 0.5s;
+	padding-top:100px;
+	z-index:-2;
+}
+#ft1{
+	left:-37.25px;
+}
+#ft2{
+	left:112px;
+}
+#ft3{
+	left:262.5px;
+}
+#ft4{
+	left:409.75px;
+}
+.cadrefilm:hover .filmtitle{
+	opacity:1;
+	z-index:8;
+}
+.filmvu{
+	position:absolute;
+	transition: 0.5s;
+	height:440px;
+	
+}
+.cadrefilm:hover img{
+	transform: scale(1.5); 
+	position: relative; 	
+}
+.stars{
+	position:absolute;
+	bottom:100px;
+	height:20px;
+	width:130px;
+	opacity:0;
+	transition: 0.5s;
+	z-index:0;
+	margin-left:10px;
+	margin-right:10px;
+}
+.stars a{
+    float: left;
+    width: 26px;    
+    height: 20px;
+    background: url(../Images/cours5/star.png) 0 -20px no-repeat;
+}
+.cadrefilm:hover .stars{
+	opacity:1;
+	z-index:9;
+}
+.cadrefilm p{
+	position:absolute;
+	top:385px;
+	width:149px;
+	text-align:center;
+	font-size:30px;
+	height:40px;
+	line-height:40px;
+}
+.rightarrow{
+	position:absolute;
+	display:block;
+	right:-50px;
+	top:200px;
+	width:0;
+	height:0;
+	border:solid 20px transparent;
+	border-left:solid 25px lightgrey;
+	
+}
+.rightarrow:hover{
+	border-left:solid 25px #333;
+}
+#cours3_instruction{
+	position:absolute;
+	top:10px;
+	text-align:center;
+	line-height:50px;
+	width:600px;
+	font-size:30px
+}
+
+#deuxieme{
+	display:none;
+}
+
+#deuxieme p{
+	margin-top:30px;
+	text-align:center;
+	height:50px;
+	font-size:1.1em;
+}
+.filmfiches{
+	width:598px;
+	height:195px;
+}
+.filmfiches #recom1{
+	display:block;
+	margin:auto;
+	width:130px;
+	height:188.5px;
+}
+.leftarrow{
+	position:absolute;
+	display:block;
+	left:-15px;
+	top:200px;
+	width:0;
+	height:0;
+	border:solid 20px transparent;
+	border-right:solid 25px lightgrey;
+}
+.leftarrow:hover{
+	border-right:solid 25px #333;
+}
+.voir{
+	position:absolute;
+	display:block;
+	right:10px;
+	top:10px;
+	width:50px;
+	height:50px;
+	z-index:3;
+}
+.voir img{
+	width:50px;
+	height:50px;
+}
+.cours5_instruction{
+	position:absolute;
+	padding:5px 20px;
+	background-color:#333;
+	color:lightgrey;
+	height:155px;
+	
+}
+#deuxieme .cours5_instruction p{
+	margin-top:7px;
+	line-height:24px;
+	font-size:19px;
+	text-align:justify;
+}
+
+#troisieme{
+	position:absolute;
+	top:0;
+	left:-10px;
+	height:440px;
+	width:602px;
+	padding:0 9px;
+	background-color:lightgrey;
+	opacity:0;
+	z-index:-1;
+}
+.tbtheorie{
+	margin-top:70px;
+	border-collapse:collapse;
+	width:602px;
+}
+.tbtheorie tr td{
+	width:98px;
+	height:48px;
+	text-align:center;
+	vertical-align:middle;
+	border:solid 2px white;
+	
+	
+}
+
+/*définir la structure du cours 6 décisions collectives   */
+
+#decision_collective {
+	background: url(../Images/cours6/picture.png) no-repeat;
+	position:absolute;
+	height: 440px;
+	width: 598px;
+	margin:30px;
+	border:solid 1px #003E6B;
+}
+.trash {
+	position: absolute;
+	height: 80px;
+}
+#drop1 {
+	position: absolute;
+	left:84px;
+	top:238px;
+ 	width: 80px;
+	height: 80px;
+}
+#drop2 {
+	position: absolute;
+	left:169px;
+	top:238px;
+ 	width: 80px;
+	height: 80px;
+}
+#drop3 {
+	position: absolute;
+	left:255px;
+	top:238px;
+ 	width: 80px;
+	height: 80px;
+}
+#source{
+	position: absolute;
+	float: left;
+	width: 280px;
+	height: 80px;
+	top: 351px;
+	left:90px;
+}
+#source img {
+	cursor: move;
+	margin:4px;
+	box-shadow: 0 0 18px rgb(255, 102, 0);
+}
+#scoresfinals {
+	position: absolute;
+	width: 200px;
+	height: 360px;
+	padding: 10px;
+	margin-top: 40px;
+	margin-left: 360px;
+}
+#score {
+	border-radius: 25px;
+	border-color: rgb(251, 68, 23);
+	border: 3px solid #ff6600;
+	padding: 4%;
+	color: rgba(251, 68, 23, .8);
+	font-weight: bold;
+	text-align: center;
+	font-size: 22px;
+}
+.returnbtn{
+	position: absolute;
+	cursor: pointer;
+}
+#delete{
+	top:360px;
+	left:20px;
+	position: absolute;
+	display: block;
+	border-radius: 50%;
+	box-shadow: 0 0 18px rgb(255, 102, 0);
+}
+
+/*cadrer les photos de cours cours enchere*/
+
+.enchere_bg1{
+	float:left;
+	width:149px;
+	height:149px;
+	background:url(../Images/cours7/sell1.png);
+	background-size:149px 149px;
+	
+}
+.enchere_bg2{
+	float:left;
+	width:149px;
+	height:149px;
+	background:url(../Images/cours7/sell2.png);
+	background-size:149px 149px;
+	
+}
+.enchere_bg3{
+	float:left;
+	width:149px;
+	height:149px;
+	background:url(../Images/cours7/sell3.png);
+	background-size:149px 149px;
+	
+}
+.enchere_bg4{
+	float:left;
+	width:149px;
+	height:149px;
+	background:url(../Images/cours7/sell4.png);
+	background-size:149px 149px;
+	
+}
+h3{
+	position:absolute;
+	top:152px;
+	width:598px;
+	text-align:center;
+	font-size:1.5em;
+	margin-top:15px;
+	border-top:dashed 2px #83AE9B;
+	border-bottom:dashed 2px #83AE9B;
+}
+.achatprix{
+	position:absolute;
+	top:210px;
+	height:120px;
+	width:598px;
+}
+.achatprix img{
+	display:block;
+	margin:auto;
+	height:120px;
+}
+.chooseprix{
+	position:absolute;
+	top:320px;
+    margin:20px 49px;
+	width:500px;
+}
+.chooseprix p{
+	font-size:30px;
+}
+.txtprix{
+    display: inline-block;
+    margin-bottom: 1em;
+    width: 50px;
+	height:25px;
+	font-size:25px;
+    text-align: center;
+	border:none;
+}
+.checkprix{
+	position:absolute;
+	top:2px;
+	right:50px;
+	width:150px;
+	height:40px;
+	font-size:20px;
+	border:dashed 2px #333;
+	background-color:#F9CDAE;
+	
+}
+.voirprix, .changeprix{
+	margin-left:10px;
+	width:130px;
+	height:30px;
+	font-size:20px;
+	border:dashed 2px #333;
+	border-radius:7px;
+	background-color:#F9CDAE;
+}
+.cours7_return{
+	position:absolute;
+	top:350px;
+	left:420px;
+	width:130px;
+	height:30px;
+	font-size:20px;
+	border:dashed 2px #333;
+	background-color:#F9CDAE;
+}
+.checkprix:hover,.changeprix:hover,.voirprix:hover{
+	background-color:#F69A9A;
+}
+.slider_prix{
+	margin-left:50px;
+	width:400px;
+	height: 20px;
+    border-radius:5px;
+	border:solid 1px #333;
+	/* Safari 5.1 - 6.0 */
+	background: -webkit-linear-gradient(bottom,#F9CDAE,#83AE9B,#F9CDAE);
+	/* Opera 11.1 - 12.0 */
+	background: -o-linear-gradient(bottom,#F9CDAE,#83AE9B,#F9CDAE);
+	/* Firefox 3.6 - 15 */
+	background: -moz-linear-gradient(bottom,#F9CDAE,#83AE9B,#F9CDAE);
+	background: linear-gradient(to bottom, #F9CDAE,#83AE9B,#F9CDAE); 
+	position:relative;	
+}
+.move_prix{
+	position: absolute;
+	display: block;
+	width: 30px;
+    height: 25px;
+    border: 1px solid #F9CDAE;
+    border-radius: 5px;
+	background-color:#F69A9A;
+	top:-2.5px;
+	margin-left:-15px;
+}       
+.minprix, .maxprix {
+    position: absolute;
+}
+.minprix {
+    left: -30px;
+}
+.maxprix {
+    right: -40px;
+}
+#showprix{
+	display:none;
+}
+.showprix_1{
+	position:absolute;
+	top:50px;
+	width:598px;
+	height:119px;
+	background:url(../Images/cours7/bg.png);
+}
+.showprix_2{
+	position:absolute;
+	top:200px;
+	margin:0 49px 10px 49px;
+	width:500px;
+	border:solid 2px #F9CDAE;
+	border-radius:10px;
+}
+.showprix_2 p{
+	margin:10px;
+	font-size:20px;
+}
+
+.prixmoyen{
+	position:absolute;
+	top:50px;
+	left:430px;
+	font-size:50px;
+}
+#showprix{
+	display:none;
+}
+#voir_mecanisme{
+	display:none;
+	position:absolute;
+	width:598px;
+	height:440px;
+	padding:30px 50px;
+	font-size:23px;
+	line-height:27px;
+}
+#voir_mecanisme table{
+	border-collapse:collapse;
+	text-align:center;
+	margin-top:10px;
+}
+#voir_mecanisme table tr td{
+	border:solid 2px #F9CDAE;
+	height:30px;
+	width:100px;
+}
+#voir_mecanisme ul li{
+	list-style: decimal;
+	padding-bottom:15px;
+}
+
+/*la structure du cours 8 allocation des ressources*/
+
+.cours8{
+	position:absolute;
+	width: 598px; 
+	height: 440px;
+	margin:30px;
+	border:solid 1px #003E6B;
+}
+.cours8_title{
+	width:598px;
+	margin-top:20px;
+	text-align:center;
+	font-size:30px;
+	
+}
+
+/*la zone de resultats*/
+
+.jeures{
+	position:absolute;
+	width:400px;
+	height:100px;
+	padding:10px 20px; 
+	font-size:20px;
+}
+.jeures p{
+	margin:5px;
+}
+.sumidcadre{
+	position:absolute;
+	float:right;
+	margin-left:252px;
+}
+.sumid{
+	 display: inline;
+}
+.borderpourcentage{
+	position:absolute;
+	height:15px;
+	width:200px;
+	border:solid 1px lightgrey;
+	padding:2px;
+	border-radius:7px;
+	margin-left:30px;
+}
+.pourcentage{
+	height:15px;
+	width:0;
+	border-radius:7px;
+	/* Safari 5.1 - 6.0 */
+	background: -webkit-linear-gradient(bottom,lightgrey,#003E6B,lightgrey);
+	/* Opera 11.1 - 12.0 */
+	background: -o-linear-gradient(bottom,lightgrey,#003E6B,lightgrey);
+	/* Firefox 3.6 - 15 */
+	background: -moz-linear-gradient(bottom,lightgrey,#003E6B,lightgrey);
+	background: linear-gradient(to bottom, lightgrey,#003E6B,lightgrey); 
+}
+.sumvalue{
+	 display: inline;
+}
+/*photo bag*/
+.bagposition{
+	position:absolute;
+	top:50px;
+	left:439px;
+	
+}
+/*la zone de selection*/
+#ressourcechoix{
+	position:absolute;
+	top:170px;
+	left:0;
+	width:400px;
+	padding:0 25px;
+}
+.ressource{
+	border:dotted 1px #003E6B;
+	border-radius:5px;
+	padding:5px 10px;
+}
+.ressource img{
+	width:50px;
+}
+#cours8_check{
+	position:absolute;
+	top:60px;
+	left:250px;
+	background-color:#F9CDAE;
+	color:#333;
+	height:35px;
+	width:160px;
+	text-align:center;
+	font-size:20px;
+	
+}
+#cours8_check:hover{
+	background-color:#F4A460;
+}
+.regledujeu{
+	position:absolute;
+	right:10px;
+	top:220px;
+	width:240px;
+	height:200px;
+	background:url("../Images/cours8/cloud.png") no-repeat;
+	background-size:240px;
+
+}
+
+/*définir une couche transparent*/
+
+.zonelayer{
+	position: absolute;
+	height: 440px;
+	width: 598px;
+    left: 0;
+    top: 0;
+	z-index:1;
+	background: rgba(0, 0, 0, 0.5);
+	opacity:0;
+}
+.cours_animation .zonelayer:hover{
+    animation: fade-in 0.5s ease 0s 1;    
+    -webkit-animation: fade-in 0.5s ease 0s 1;
+    -moz-animation: fade-in 0.5s ease 0s 1;
+    -o-animation: fade-in 0.5s ease 0s 1;
+    -ms-animation: fade-in 0.5s ease 0s 1;
+  
+	animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;  
+    -o-animation-fill-mode: forwards; 
+    -ms-animation-fill-mode: forwards;   
+    -moz-animation-fill-mode: forwards; 
+}
+
+/*le style des bouttons*/
+button{
+	position: absolute;
+	height:50px;
+	width:299px;
+	margin:auto;    
+    cursor: pointer;  
+    text-align: center;   
+	font-size: 25px;  
+	-webkit-border-radius: 2em;   
+    -moz-border-radius: 2em;  
+    border-radius: 2em;  
+	color: #ffffff;   
+    background: #003E6B;
+	border:none;
+}
+button:hover{
+	background-color:#603E6B;
+	transition:0.5s ;
+	-moz-transition: 0.5s ;
+	-webkit-transition: 0.5s ;
+}
+.buttontop{
+	left:149px;
+	top:148px;
+}
+.buttonbottom{
+	top:241px;
+	left:149px;
+}
+.buttonmiddle{
+	top:210px;
+	left:149px;
+}

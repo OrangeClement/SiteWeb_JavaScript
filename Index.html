@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Raisonnement et Science de la Décision - Université Toulouse 1 Capitole </title>
+		
+		<script src="Javascript/jquery-3.3.1.min.js"></script>
+		<script src="Javascript/fonctions.js"></script>
+		<script src="Javascript/layer/layer.js"></script>
+		<script src="Javascript/fonctions_cours2.js"></script>
+		<script src="Javascript/fonctions_cours3.js"></script>
+		<script src="Javascript/fonctions_cours5.js"></script>
+		<script src="Javascript/fonctions_cours6.js"></script>
+		<script src="Javascript/fonctions_cours7.js"></script>
+		<script src="Javascript/fonctions_cours8.js"></script>
+		
+		<link href="style/Style.css" rel="stylesheet" type="text/css">
+		<link href="style/fontface.css" rel="stylesheet" type="text/css">
+	
+	</head>
+	
+	<body>
+	
+		<div class="top"> 
+			
+			<div class="top_img">
+				<img src="Images/banner/banner1.png">
+				<img src="Images/banner/banner2.png">
+				<img src="Images/banner/decision collective.png">
+				<img src="Images/banner/enchere.png">
+				<img src="Images/banner/maze.png">
+			</div>
+			
+			<div class="top_title">
+	
+				<h1>Raisonnement et Science de la Décision</h1>
+				<h2>Master MIAGE M1 IM - Université Toulouse 1 Capitole</h2>
+				
+			</div>
+			
+		</div>
+		
+		
+		
+		<div class="menu">
+			<ul>
+				<li><a href="#des">Description</a></li>
+				<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)" ><a href="#cours">Cours</a>
+					<ul>
+						<li><a href="#recherche">Recherche Web</a></li>
+						<li><a href="#reseau">Réseaux Sociaux</a></li>
+						<li><a href="#logique1">Logique et WEB semantique I</a></li>
+						<li><a href="#logique2">Logique et WEB semantique II </a></li>
+						<li><a href="#intelligence">Intelligence collective apprentissage</a></li>
+						<li><a href="#decision">Décisions collectives </a></li>
+						<li><a href="#enchere">Mécanismes d'enchères</a></li>
+						<li><a href="#cours_8_ressource">Allocation des ressources</a></li>
+					</ul>
+				</li>
+				<li><a href="#biblio">Bibliographie</a></li>
+			</ul>
+		</div>
+		
+		<a name="des"></a>
+		<div class="description">
+			
+			<img src="Images/escher.jpg">
+			
+			<p class="upper_letter">
+				Ce cours s'adresse à des étudiants de niveau Master 1 en systèmes d'information, avec des parcours de 
+				licence en Gestion ou en Economie. Il se propose de les initier aux principaux algorithmes de raisonnement, 
+				représentation des connaissances, et prise de décision, qui font partie du cœur de l'informatique théorique 
+				moderne. 
+			</p>
+			
+			<p>
+				Chaque cours part d’une application réelle dans le domaine informatique, et analyse la modélisation mathématique 
+				et algorithmique sous-jacente. Le but du cours est de donner aux étudiants une boîte à outils pour pouvoir se 
+				confronter à la pensée algorithmique, ainsi que le vocabulaire et les bases théoriques nécessaires pour avancer 
+				tous seuls quand ils se retrouveront confrontés à une nouvelle application, algorithme, ou logiciel.
+			</p>
+			
+			<p>
+				Ce site a été crée pour partager le programme et les transparents du cours, préparées par Umberto Grandi et Laurent 
+				Perrussel. Les étudiants du 
+				<a href="http://miage.ut-capitole.fr/master-m1-mention-miage-parcours-type-ingenierie-metier-im--310746.kjsp?RH=1456241455120" 
+				target="_blank">Master MIAGE IM</a> doivent consulter le matériel mis à jour chaque année sur 
+				<a href="https://cours.ut-capitole.fr/" target="_blank">Moodle</a>.
+			</p>
+			
+		</div>
+		<div id="touslescours">
+		<a name="cours"></a>
+		
+		<div class="titleframe" style="opacity: 0">
+			
+			<div class="title">
+			
+				<p>
+					La durée de chaque cours est 1h30 environ.
+				</p>
+				<p>
+					Le cours est complété par des sessions de travaux dirigées en forme d'exercices à faire en groupe.
+				</p>
+				
+			</div>
+		</div>
+
+		<a name="recherche"></a>
+		
+		<div id="circle">
+		</div>
+		
+		<div class="cadrecours">
+		<a name="recherche"></a>
+		<div class="cours_gauche">
+			
+			<div class="cours_contenue">
+				<h2>
+					Recherche WEB
+				</h2>
+				<p>Algorithmes de recherche fondés sur le réseau des liens 
+					(Hubs and Authority, PageRank) 
+				</p>
+				<p>
+					<a href="Documents/1rechercheWEB.pdf" class="support" download="1rechercheWEB">Download Support</a>
+				</p>
+			</div>
+		</div>
+		
+		<div class="cours_droit">
+		
+			<div class="cours_animation" id="cours-recherche">
+				
+				<ul>
+					<li><img src="Images/cours1/tenor.gif"></li>
+					<li><img src="Images/cours1/recherche1.jpg"></li>
+					<li><img src="Images/cours1/recherche2-1.png"></li>
+					<li><img src="Images/cours1/recherche2-2.png"></li>
+					<li><img src="Images/cours1/recherche2-3.png"></li>
+					<li><img src="Images/cours1/recherche2-1.png"></li>
+					<li><img src="Images/cours1/recherche2-2.png"></li>
+					<li><img src="Images/cours1/recherche2-3.png"></li>
+					<li><img src="Images/cours1/recherche3.jpg"></li>
+					<li><img src="Images/cours1/tenor.gif"></li>
+				</ul>
+				
+				<button class="buttonmiddle" id="btnrecherche">PageRank 1.0</button>
+							
+
+			</div>
+
+		</div>
+		<a name="reseau"></a>
+		<div class="cours_gauche">
+			
+			<div class="cours_animation">
+				<canvas id="canvas" width="598" height="440"></canvas>
+				<button id="canvasbtn">Algo de Dijkstra</button>
+				<button id="canvasbtnbegin" disabled="disabled">Start</button>
+				<button id="canvasbtnstop" disabled="disabled">Stop</button>
+				
+			</div>
+			
+		</div>
+		
+		<div class="cours_droit">
+			<div class="cours_contenue">
+				<h2 >
+					Réseau sociaux
+				</h2>
+				<p>Représentation matricielle d'un réseau, algorithme de Dijkstra, 
+					diametre, centralité de degré et de proximité  
+				</p>
+				<p>
+					<a href="Documents/2reseauxsociaux.pdf" class="support" download="2reseauxsociaux.pdf">Download Support</a>
+				</p>
+			</div>
+		</div>
+		<a name="logique1"></a>
+		<div class="cours_gauche">
+			<div class="cours_contenue">
+				<h2>
+					Logique et WEB semantique I
+				</h2>
+				<p>
+					Introductions aux langages formels, logique propositionnelle  
+				</p>
+				<p>
+					<a href="Documents/3.1logiqueprop.pdf" class="support" download="3.1logiqueprop.pdf">Download Support</a>
+				</p>
+			</div>
+		</div>
+		
+		<div class="cours_droit">
+		
+			<div class="cours3" id="logique1">
+				<div id="top_text"><p>Aladdin a trouvé deux lampes dans sa cave</p></div>
+				<img id="cours3_top" src="Images/cours3/top.gif">
+				<img id="bg" src="Images/cours3/cours3bg.png">
+				<div id="indication1">
+					<p>Mettez la souris sur Aladdin et les lampes pour voir leurs indications.</p>
+				</div>
+				<div id="indication2">
+					<p>Cliquez sur la lampe choisie.</p>
+				</div>
+				<img id="dialogA" src="Images/cours3/dialogA.png">
+				<img id="dialogA2" src="Images/cours3/dialogA2.png">
+				<img id="AladdinHover" src="Images/cours3/AladdinHover.png">
+				<img id="Aladdin" src="Images/cours3/Aladdin.png">
+				<img id="demon" src="Images/cours3/demon.png">
+				<img id="genie" src="Images/cours3/genie.png">
+				<img id="dialogL" src="Images/cours3/dialogL.png">
+				<img id="dialogR" src="Images/cours3/dialogR.png">
+				<img id="lampeLHover" src="Images/cours3/lampeLHover.png">
+				<img id="lampeL" src="Images/cours3/lampeL.png">
+				<img id="lampeRHover" src="Images/cours3/lampeRHover.png">
+				<img id="lampeR" src="Images/cours3/lampeR.png">
+				<div id="shadowbox"></div>
+				<img id="returnHover" src="Images/cours3/returnHover.png">
+				<img id="return" src="Images/cours3/return.png">
+				<img id="resultat" src="Images/cours3/resultat.png">
+				<img id="iconHover" src="Images/cours3/iconHover.png">
+				<img id="icon" src="Images/cours3/icon.png">
+
+				<button id="buttoncours3">Trouver Génie</button>
+
+							
+
+			</div>
+		
+		</div>
+		<a name="logique2"></a>
+		<div class="cours_gauche">
+			<div class="cours_animation">
+				<div id="img_video">
+					<img id="imgcours" src="Images/image-cours3.png">
+					<img id="imgvideo" src="Images/image-video.png">
+					<img id="imgDBpedia" src="Images/DBpediaLogo.png">
+				</div>
+				<div class="zonelayer">
+					<button class="buttontop">Linked Data</button>
+					<button class="buttonbottom">DBPédia</button>
+
+				</div>
+			</div>
+		</div>
+		
+		<div class="cours_droit">
+			<div class="cours_contenue">
+			<h2>
+				Logique et WEB semantique II
+			</h2>
+			<p>
+				Logique du premier ordre, notions d'ontologie   
+			</p>
+			<p>
+				<a href="Documents/3.2FOL.pdf" class="support" download="3.2FOL.pdf">Download Support</a>
+			</p>
+			</div>
+		</div>
+		<a name="intelligence"></a>
+		<div class="cours_gauche">
+			<div class="cours_contenue">
+			<h2>
+				Intelligence collective apprentissage
+			</h2>
+			<p>
+				Systèmes de recommandation, collaborative filtering (user-based et item-based)   
+			</p>
+			<p>
+				<a href="Documents/4recommandation.pdf" class="support" download="4recommandation.pdf">Download Support</a>
+			</p>
+			
+			</div>
+		</div>
+		
+		<div class="cours_droit">
+		
+			<div class="cours5">
+				<div id="premier">	
+				
+					<div class="rightarrow" onclick="nextpage()"></div>
+					
+					<ul>
+						<li>
+							<div class="cadrefilm">
+								<div class="filmvu"><img src="Images/cours5/avenger3.jpg"></div>
+								<div class="filmtitle" id="ft1">Avenger 3</div>
+								<div id="m1" class="stars">
+									<a href="javascript:;"></a>
+									<a href="javascript:;"></a>
+									<a href="javascript:;"></a>
+									<a href="javascript:;"></a>
+									<a href="javascript:;"></a>
+								</div>
+								<p></p>
+							</div>
+						</li>
+						<li>
+							<div class="cadrefilm">
+								<div class="filmvu"><img src="Images/cours5/lalaland.jpg"></div>
+								<div class="filmtitle" id="ft2">La la land</div>
+								<div id="m2" class="stars">
+									<a></a>
+									<a></a>
+									<a></a>
+									<a></a>
+									<a></a>
+								</div>
+								<p></p>
+							</div>
+						</li>
+						<li>
+							<div class="cadrefilm">
+								<div class="filmvu"><img src="Images/cours5/lionking.jpg"></div>
+								<div class="filmtitle" id="ft3">Lion king</div>
+								<div id="m3" class="stars">
+									<a></a>
+									<a></a>
+									<a></a>
+									<a></a>
+									<a></a>
+								</div>
+								<p></p>
+							</div>
+						</li>
+						<li>
+							<div class="cadrefilm">
+								<div class="filmvu"><img src="Images/cours5/intouchable.jpg"></div>
+								<div class="filmtitle" id="ft4">Intouchable</div>
+								<div id="m4" class="stars">
+									<a></a>
+									<a></a>
+									<a></a>
+									<a></a>
+									<a></a>
+								</div>
+								<p></p>
+							</div>
+						</li>
+					</ul>
+					
+					<p id="cours3_instruction"><strong>Un film recommandé pour vous ！</strong><br>Evaluer tous ces films</p>
+					
+				</div>
+			
+				<div id="deuxieme">
+					<div class="leftarrow" onclick="lastpage()"></div>
+					<div class="voir">
+						<img src="Images/cours5/voir.png" onclick="voirtheorie()">
+					</div>
+					
+					<p><strong>Voici notre recommendation :</strong></p>
+					<div class="filmfiches">
+						<img id="recom1" src="">
+					</div>
+					<div class="cours5_instruction">
+						<p>La recommendation est basé sur l'algorithme de recommendation item-based. Nous utilisons la corrélation de Pearson pour calculer les similarités entre les films.<br>Cliquer le button en haut à droit pour voir la matrice de similarité et les scores de chaque film.</p>
+						
+					</div>
+					
+				</div>
+				
+				<div id="troisieme">
+					<table class="tbtheorie">
+						<tr>
+							<td></td>
+							<td>Evaluation</td>
+							<td>Coco</td>
+							<td>Les Misérables</td>
+							<td>Black Swan</td>
+							<td>Star War</td>
+						</tr>
+						
+						<tr>
+							<td>Avenger 3</td>
+							<td id="eva1"></td>
+							<td>-0.42</td>
+							<td>-0.03</td>
+							<td>0.62</td>
+							<td>0.2</td>
+						</tr>
+						
+						<tr>
+							<td>La la land</td>
+							<td id="eva2"></td>
+							<td>0.22</td>
+							<td>0.54</td>
+							<td>0.95</td>
+							<td>0.92</td>
+						</tr>
+						
+						<tr>
+							<td>Lion king</td>
+							<td id="eva3"></td>
+							<td>-0.13</td>
+							<td>0.52</td>
+							<td>0.67</td>
+							<td>0.06</td>
+						</tr>
+						<tr>
+							<td>Intouchable</td>
+							<td id="eva4"></td>
+							<td>0.53</td>
+							<td>0.59</td>
+							<td>0.25</td>
+							<td>0.38</td>
+						</tr>
+						<tr>
+							<td>Normalisé</td>
+							<td></td>
+							<td id="eva-sim1"></td>
+							<td id="eva-sim2"></td>
+							<td id="eva-sim3"></td>
+							<td id="eva-sim4"></td>
+						</tr>
+				
+					</table>
+				</div>
+			
+			</div>
+			
+		</div>
+		<a name="decision"></a>
+		<div class="cours_gauche">
+			<!--algorithme: Score de Borda-->
+			<div id="decision_collective">
+				<!--结果分数显示的位置 la position du score-->
+				<div id="scoresfinals">
+				<table id="score">
+					<tr>
+						<td></td>
+						<td>Score</td>
+					</tr>
+					<tr>
+						<td><img src="Images/cours6/ff.png"
+							alt="French fries"></td>
+						<td style="  font-size:32px;"> 5 </td>
+					</tr>
+					<tr>
+						<td><img src="Images/cours6/cola.png"
+							alt="coke"></td>
+						<td style="  font-size:32px;"> 3 </td>
+					</tr>
+					<tr>
+						<td><img src="Images/cours6/hd.png"
+							alt="Hot Dog"></td>
+						<td style="  font-size:32px;"> 4 </td>
+					</tr>
+					<tr>
+						<td><img src="Images/cours6/gold.jpg"
+							title="Winner" alt="Winner"></td>
+						<td>French fries</td>
+					</tr>
+					</table>
+				</div>
+				<!--la position de Trois blocs de flotteur dans la table de socre-->
+				<div id="trash">
+					<div id="drop1" ondrop="drop(event)" ondragover="testDrop(event)"></div>
+					<div id="drop2" ondrop="drop(event)" ondragover="testDrop(event)"></div>
+					<div id="drop3" ondrop="drop(event)" ondragover="testDrop(event)"></div>
+				</div>
+				<!--存在移动的三个浮块的地方 la position de Trois blocs de flotteur-->
+				<div id="source" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<img src="Images/cours6/ff.png" draggable="true" ondragstart="drag(event)" id="drag1" />
+					<img src="Images/cours6/cola.png" draggable="true" ondragstart="drag(event)" id="drag2" />
+					<img src="Images/cours6/hd.png" draggable="true" ondragstart="drag(event)" id="drag3" />
+				</div>
+
+				<div class="returnbtn">
+					<img id="delete" src="Images/cours6/return.png" onMouseUp="cleardrop()" onMouseDown="shadowoff()">
+				</div>
+
+			</div>
+			
+		</div>
+		
+		<script src="Javascript/fonctions_cours6.js"></script>
+		
+		<div class="cours_droit">
+			<div class="cours_contenue">
+			<h2>
+				Décisions collectives
+			</h2>
+			<p>
+				Règles de vote (pluralité, Borda, Condorcet), algorithmes de vote stratégique, paradoxe de Condorcet    
+			</p>
+			<p>
+				<a href="Documents/5choixsociale.pdf" class="support" download="5choixsociale.pdf">Download Support</a>
+			</p>
+			</div>
+		</div>
+		<a name="enchere"></a>
+		<div class="cours_gauche">
+			<div class="cours_contenue">
+			<h2>
+				Mécanismes d'enchères
+			</h2>
+			<p>
+				Enchères simple, double, multi-unités et combinatoire, ad-auctions  
+			</p>
+			<p>
+				<a href="Documents/6encheres.pdf" class="support" download="6encheres.pdf">Download Support</a>
+			</p>
+			</div>
+		</div>
+		
+		<div class="cours_droit">
+			
+			<div class="cours7">
+				<div id="makeprix">
+					<div class="enchere_bg1"></div>
+					<div class="enchere_bg2"></div>
+					<div class="enchere_bg3"></div>
+					<div class="enchere_bg4"></div>
+					
+					<h3>Enchères doubles</h3>
+					
+					<div class="achatprix"><img src="Images/cours7/buy.png"></div>
+					
+					<div class="chooseprix">
+						<p>Votre prix : <input class="txtprix" type="text" value="0" readonly/>€</p>
+						
+						<input class="checkprix" type="button" value="Confirmer"/>
+						
+						<div class="slider_prix">
+							<span class="minprix">0</span><span class="move_prix"></span><span class="maxprix">500</span>
+						</div>
+					</div>
+				
+				</div>
+				
+				
+				<div id="showprix">
+					<div class="showprix_1">
+						<em><strong><span class="prixmoyen"></span></strong></em>
+					</div>
+					
+					<div class="showprix_2">
+						<p>Vous connaissez le paiement VCG (Vickrey–Clarke–Groves)?</p>
+						<p><em>Voir le mécanisme d'enchère ?</em> 
+							<input class="voirprix" type="button" value="Voir"/></p>
+						
+						<p><em>Essayer de changer le prix?</em>
+							<input class="changeprix" type="button" value="Changer"/></p>
+						
+					</div>
+				</div>
+				
+				<div id="voir_mecanisme">
+					<ul>
+						<li>Classement des prix
+							<table>
+								<tr>
+									<td>Prix vente</td>
+									<td class="prix1"></td>
+									<td class="prix2"></td>
+									<td class="prix3"></td>
+									<td class="prix4"></td>
+								</tr>
+								<tr>
+									<td>Prix achat</td>
+									<td class="prix5"></td>
+									<td class="prix6"></td>
+									<td class="prix7"></td>
+									<td class="prix8"></td>
+								</tr>
+							</table>
+						</li>
+						<li>Relier au maximum K valeur (Achat > Vente)<br>
+						
+							<p><em><strong>k = <span class="k"></span></strong></em></p>
+						</li>
+						<li>
+							Acheteur paie <em><strong><span class="show_prixachat"></span></strong></em> €.<br>
+							Vendeur reçoit <em><strong><span class="show_prixvente"></span></strong></em> €.<br>
+							<img src="Images/cours7/theorie.png">
+							<input class="cours7_return" type="button" value="Fermer"/>
+						</li>
+					</ul>
+					
+				</div>
+			
+			</div>
+			
+		</div>
+		<a name="cours_8_ressource"></a>
+		<div class="cours_gauche">
+			<div class='cours8'>
+			
+				<div class="cours8_title">Problème de sac à dos</div>				
+				<div class="jeures">
+					
+					<p>Valeur Total : <em><span class="sumvalue">0</span></em> $</p>
+					<p>Poids total : </p>
+					
+					<div class="borderpourcentage">
+						<div class="pourcentage"></div>
+					</div>
+					
+					<div class="sumidcadre">
+						<em><span  class ="sumid">1500</span> g restant</em>
+					</div>
+					
+				</div>
+					
+				<div class="bagposition">
+					<img src="Images/cours8/bag.png" alt="Sac a dos" style="width:150px;"/>
+				</div>
+				
+				<div id="ressourcechoix">
+					<table class="ressource">
+						<tr>
+							<td><input type="checkbox" class="objet1" value="" id="">
+								<span class="txtobjet1"></span><img src="Images/cours8/keys.png" alt="cles"/></td>
+							<td><input type="checkbox" class="objet2" value="" id="">
+								<span class="txtobjet2"></span><img src="Images/cours8/cup.png" alt="cup"/></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="objet3" value="" id="">
+								<span class="txtobjet3"></span><img src="Images/cours8/wallet.png" alt="wallet"/></td>
+							<td><input type="checkbox" class="objet4" value="" id="">
+								<span class="txtobjet4"></span><img src="Images/cours8/lipstick.png" alt="rouge"/></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="objet5" value="" id="">
+								<span class="txtobjet5"></span><img src="Images/cours8/penbag.png" alt="trouse"/></td>
+							<td><input type="checkbox" class="objet6" value="" id="">
+								<span class="txtobjet6"></span><img src="Images/cours8/book.png" alt="book"/></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="objet7" value="" id="">
+								<span class="txtobjet7"></span><img src="Images/cours8/ipad.png" alt="ipad"/></td>
+							<td></td>
+						</tr>
+					</table>
+				
+				</div>
+				
+				<input type="button" id="cours8_check" value="Vérifier réponse">
+				
+				<div class="regledujeu">
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="cours_droit">
+			<div class="cours_contenue">
+			<h2>
+				Allocation des ressources
+			</h2>
+			<p>
+				Planification des taches, programmation par contraintes   
+			</p>
+			<p>
+				<a href="Documents/7contraintes.pdf" class="support" download="7contraintes.pdf">Download Support</a>
+			</p>
+			</div>
+		</div>
+		
+		</div>
+		<div id="circle">
+		</div>
+		</div>
+		
+		<a name="biblio" id="Biblio"></a>
+		
+		<div class="bibliographie">
+		
+			<h1>Bibliographie</h1>
+			<ul>
+				<li>Recherche WEB: Easley and Kleinberg. Network, Crowds and Markets, 2010 (Chapitre 14)</li>
+				<li>Réseaux sociaux: Jackson, Social and Economic Networks, 2008. (Chapitres 1 et 2)</li>
+				<li>Logique et web semantique: Russell and Norvig, Artificial Intelligence, 2010. (Chapitres 7,8,12) </li>
+				<li>Intelligence collective et apprentissage: Seagaran, Programming collective intelligence, 2007. (Chapitre 2) </li>
+				<li>Décisions collectives: cours de 
+					<a href="https://staff.fnwi.uva.nl/u.endriss/teaching/comsoc/" target="_blank">Computational Social Choice</a> 
+					à l'Université d'Amsterdam.
+				</li>
+			</ul>
+			
+			<p>Ce cours est librement inspiré de "
+				<a href="https://en.wikipedia.org/wiki/The_Way_Things_Work" target="_blank">Comment ca marche</a>",
+				un livre magnifique qui a marqué mon enfance. 
+			</p>
+		</div>
+		
+		<div class="foot">
+			2018  Design by Fei SHEN, Jiayu CHANG, Xiyue LIAO, Yanrui GUO, Yiyang WANG
+		</div>
+		
+		<div class="show">
+				<div id="box"></div>
+				<div class="vedioarea">
+				<iframe src="https://embed.ted.com/talks/lang/en/tim_berners_lee_on_the_next_web" width="1110.2px" height="624px" style="position:absolute; " frameborder="0" scrolling="no" allowfullscreen></iframe>
+				</div>
+				<div class="textarea">
+				<h2>The next web</h2>
+				<p>20 years ago, Tim Berners-Lee invented the World Wide Web. For his next project, he's building a web for open, linked data that could do for numbers what the Web did for words, pictures, video: unlock our data and reframe the way we use it together.</p>
+				</div>
+		</div>
+		
+		
+				<!-- Insert side-catalogue-->
+		<script src="Javascript/bootstrap-3.2.0.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style/sideCatalog.css">
+		<script type="text/javascript" src="Javascript/sideCatalog.js"></script>
+	</body>
+	
+</html>

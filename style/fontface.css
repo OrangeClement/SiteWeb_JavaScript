@@ -1,0 +1,65 @@
+/*font Novecentosanwide*/
+
+@font-face {
+    font-family: "Novecentosanwide-0";
+    src: url("../fonts/Novecentosanwide/36C215_0_0.eot") format("embedded-opentype"),
+    url("../fonts/Novecentosanwide/36C215_0_0.ttf") format("truetype"),
+    url("../fonts/Novecentosanwide/36C215_0_0.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Novecentosanwide-1";
+    src: url("../fonts/Novecentosanwide/36C215_1_0.eot") format("embedded-opentype"),
+    url("../fonts/Novecentosanwide/36C215_1_0.ttf") format("truetype"),
+    url("../fonts/Novecentosanwide/36C215_1_0.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Novecentosanwide-2";
+    src: url("../fonts/Novecentosanwide/36C215_2_0.eot") format("embedded-opentype"),
+    url("../fonts/Novecentosanwide/36C215_2_0.woff") format("woff"),
+    url("../fonts/Novecentosanwide/36C215_2_0.ttf") format("truetype");
+}
+
+
+@font-face{
+    font-family:"Novecentosanwide-3";
+    src:url("../fonts/Novecentosanwide/36C215_3_0.eot") format("embedded-opentype"),
+    url("../fonts/Novecentosanwide/36C215_3_0.ttf") format("truetype"),
+    url("../fonts/Novecentosanwide/36C215_3_0.woff") format("woff");
+}
+
+
+
+@font-face{
+    font-family:"Novecentosanwide-5";
+    src:url("../fonts/Novecentosanwide/36C215_5_0.eot") format("embedded-opentype"),
+    url("../fonts/Novecentosanwide/36C215_5_0.woff") format("woff"),
+    url("../fonts/Novecentosanwide/36C215_5_0.ttf") format("truetype");
+}
+
+/*font comfortaa*/
+
+@font-face{
+    font-family:"Comfortaa-Bold";
+    src:url("../fonts/fonts/comfortaa/comfortaa-bold-webfont.eot") format("embedded-opentype"),
+    url("../fonts/comfortaa/comfortaa-bold-webfont.woff") format("woff"),
+    url("../fonts/comfortaa/Comfortaa-Bold.ttf") format("truetype"),
+	url("../fonts/comfortaa/comfortaa-bold-webfont.svg") format("svg");
+}
+
+@font-face{
+    font-family:"Comfortaa-light";
+    src:url("../fonts/comfortaa/comfortaa-light-webfont.eot") format("embedded-opentype"),
+    url("../fonts/comfortaa/comfortaa-light-webfont.woff") format("woff"),
+    url("../fonts/comfortaa/comfortaa-light-webfont.ttf") format("truetype"),
+	url("../fonts/comfortaa/Comfortaa-Light.ttf") format("svg");
+}
+
+@font-face{
+    font-family:"Comfortaa-regular";
+    src:url("../fonts/comfortaa/comfortaa-regular-webfont.eot") format("embedded-opentype"),
+    url("../fonts/comfortaa/comfortaa-regular-webfont.woff") format("woff"),
+    url("../fonts/comfortaa/Comfortaa-Regular.ttf") format("truetype"),
+	url("../fonts/comfortaa/comfortaa-regular-webfont.svg") format("svg");
+}
